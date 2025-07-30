@@ -17,8 +17,8 @@ export default defineConfig(({ command }) => {
 				manifest: {
 					short_name: 'HabitTracker',
 					name: 'Habit Tracker PWA',
-					start_url: '/',
-					scope: '/',
+					start_url: base ? `${base}/` : '/',
+					scope: base ? `${base}/` : '/',
 					display: 'standalone',
 					theme_color: '#2563eb',
 					background_color: '#ffffff',
